@@ -1,7 +1,5 @@
 public class Car {
-
     public enum CarType {
-
         TRUCK,
         VAN,
         PERSONAL,
@@ -23,7 +21,6 @@ public class Car {
         this.mileage = mileage;
         this.mileageDate = mileageDate;
         this.ownedBy = owner.getId();
-
     }
 
     public String getProducer() {
@@ -33,7 +30,6 @@ public class Car {
     public String getName() {
         return name;
     }
-
 
     public CarType getCarType() {
         return carType;
@@ -66,33 +62,21 @@ public class Car {
     }
 
     public static class Personal extends Car {
-
         public Personal(String producer, String name, int productionYear, int mileage, String mileageDate, Person owner) {
             super(producer, name, CarType.PERSONAL, productionYear, mileage, mileageDate, owner);
-
         }
-
     }
 
     public static class Van extends Car {
-
         public Van(String producer, String name, int productionYear, int mileage, String mileageDate, Person owner) {
             super(producer, name, CarType.VAN, productionYear, mileage, mileageDate, owner);
-
         }
-
     }
 
     public static class Truck extends Car {
-
         public Truck(String producer, String name, int productionYear, int mileage, String mileageDate, Person owner) {
             super(producer, name, CarType.TRUCK, productionYear, mileage, mileageDate, owner);
-
-
         }
-
     }
-
-
 }
 

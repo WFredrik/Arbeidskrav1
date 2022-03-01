@@ -8,8 +8,6 @@ public class CarSystem {
     ArrayList<Integer> carMileageList = new ArrayList<>();
     Calendar calendar = Calendar.getInstance();
 
-
-
     public CarSystem() {
     }
 
@@ -40,7 +38,6 @@ public class CarSystem {
                 (calendar.get(Calendar.YEAR) - car3.getProductionYear()),
                 (calendar.get(Calendar.YEAR) - car4.getProductionYear()),
                 (calendar.get(Calendar.YEAR) - car5.getProductionYear())));
-
 
         carMileageList.addAll(List.of(car1.getMileage(),
                 car2.getMileage(),
@@ -85,6 +82,5 @@ public class CarSystem {
                 .orElse(0);
 
         System.out.println("Average car mileage: " + averageCarMileage);
-
     }
 }
